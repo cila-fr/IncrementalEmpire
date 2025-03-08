@@ -1,0 +1,92 @@
+[gd_scene load_steps=2 format=3 uid="uid://do1x16gfleajj"]
+
+[ext_resource type="Script" uid="uid://cdyc7q8of2q3c" path="res://scenes/main_scene.gd" id="1_e0arj"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e0arj")
+
+[node name="GenerateCrystal" type="Button" parent="."]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = 250.0
+grow_vertical = 0
+text = "Generate Crystal
+"
+
+[node name="GenerateEnergy" type="Button" parent="."]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -80.0
+offset_right = 125.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Generate Energy"
+
+[node name="GenerateMetal" type="Button" parent="."]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -80.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Generate Metal"
+
+[node name="EnergyCountLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -125.0
+offset_right = 125.0
+offset_bottom = 80.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Energy : <value>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CrystalCountLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+offset_right = 134.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 24
+text = "Crystal : <value>	"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MetalCountLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_bottom = 80.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "Metal : <value>	"
+horizontal_alignment = 1
+vertical_alignment = 1
