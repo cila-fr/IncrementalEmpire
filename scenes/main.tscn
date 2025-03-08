@@ -26,7 +26,7 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Generate Energy"
 
-[node name="EnergyCount" type="Label" parent="."]
+[node name="EnergyCountLabel" type="Label" parent="."]
 custom_minimum_size = Vector2(250, 80)
 layout_mode = 1
 anchors_preset = 5
@@ -40,5 +40,3 @@ theme_override_font_sizes/font_size = 24
 text = "Energy : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[connection signal="pressed" from="GenerateEnergyClick" to="." method="_on_generate_energy_click_pressed"]
