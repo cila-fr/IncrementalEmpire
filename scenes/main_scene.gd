@@ -47,7 +47,7 @@ func addMiner() -> void:
 		return
 		
 	miner_count += 1
-	metal_count -= miner_cost
+	metal_count -= roundi(miner_cost)
 	miner_cost = roundi(miner_cost * (1 + miner_price_index))
 	updateMetalCount()
 	updateMinerCost()
